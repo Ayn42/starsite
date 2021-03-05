@@ -36,7 +36,8 @@
 }
 
 .first-section{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .box1{
@@ -46,34 +47,56 @@
 
 .box1 h2{
     text-align: center;
+    font-size: 45px;
     color: #fff;
+    padding: 40px;
 }
 
 .box1 p{
+    font-size: 20px;
     text-align: center;
     color: #fff;
-}
-
-.first-section h2{
-    text-align: center;
-    font-size: 45px;
-}
-
-.first-section p{
-    font-size: 20px;  
+    padding: 40px;    
 }
 
 .second-section{
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
-.box2{}
+.box2{
+
+}
+
+.box2 h2{
+    font-size: 45px;
+    color: #fff;
+}
+
+.box2 p{
+    font-size: 20px;
+    color: #fff;
+}
 
 .box3{
     display: flex;
+    padding-top:200px;
 }
 
-.third-section{}
+.third-section{
+    width: 100vw;
+    height: 100vh;
+}
+
+.box4 h2{
+    font-size: 45px;
+    color: #fff;
+}
+
+.box4 p{
+    font-size: 20px;
+    color: #fff;
+}
 
 .mamewaza_weather{
     padding-top:40   px;
