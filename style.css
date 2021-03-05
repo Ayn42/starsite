@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+}
+
+.nav nav{
+    position:absolute;
+    top:20px;
+}
+
+.nav ul{
+    margin:0 auto;
+}
+
+.nav li{
+    list-style: none;
+    float: left;
+}
+
+.nav a{
+    display: flex;
+    text-decoration: none;
+    margin:20px;
+}
+
+.background img{
+    position: absolute;
+    width: 100%;
+    top: 20;
+    right: 0;
+    z-index: -900;
+}
+
+.first-section{
+    width: 100%;
+}
+
+.box1{
+    display: block;
+    position: relative;
+}
+
+.box1 h2{
+    text-align: center;
+    color: #fff;
+}
+
+.box1 p{
+    text-align: center;
+    color: #fff;
+}
+
+.first-section h2{
+    text-align: center;
+    font-size: 45px;
+}
+
+.first-section p{
+    font-size: 20px;  
+}
+
+.second-section{
+    width: 100%;
+}
+
+.box2{}
+
+.box3{
+    display: flex;
+}
+
+.third-section{}
+
+.mamewaza_weather{
+    padding-top:40   px;
+    width: 60vw;
+    margin:0 auto;
+    z-index: 700;
+}
+
+.fourth-section{}
