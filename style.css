@@ -36,11 +36,17 @@
     background-image: url(image/nightsky.jpg);
     background-size: contain;
     background-repeat: repeat-y;
+    background-color: navy;
 }
 
-.first-section{
+.first-section, .second-section, .fourth-section, .fifth-section{
     width: 100vw;
     height: 100vh;
+}
+
+.third-section{
+    width: 100vw;
+    height: auto;
 }
 
 .box1{
@@ -62,33 +68,22 @@
     padding: 40px;    
 }
 
-.second-section{
-    width: 100vw;
-    height: 100vh;
+.box2, .box11, .box12, .box15 {
+    padding: 50px;
 }
 
-.box2{
-
-}
-
-.box2 h2{
+.box2 h2, .box11 h2, .box12 h2{
     font-size: 45px;
     color: #fff;
 }
 
-.box2 p{
+.box2 p, .box11 p, .box12 p{
     font-size: 20px;
     color: #fff;
 }
 
 .box3{
     display: flex;
-    padding-top:200px;
-}
-
-.third-section{
-    width: 100vw;
-    height: 100vh;
 }
 
 .box4 h2{
@@ -108,7 +103,7 @@
     z-index: 700;
 }
 
-.container1, .container2, .container3{
+.container1, .container2, .container3, .container4{
     display: flex;
     margin: 0 auto;
     width: 80vw;
@@ -116,12 +111,12 @@
     align-items: center;
 }
 
-.box5, .box6, .box7, .box8, .box9 ,.box10{
+.box5, .box6, .box7, .box8, .box9 ,.box10,.box13,.box14{
     width: 50%;
 }
 
 
-.box5 img, .box8 img, .box9 img{
+.box5 img, .box8 img, .box9 img, .box13 img{
     width: 90%;
     margin: 0 auto;
 }
@@ -134,9 +129,37 @@
 }
 
 .box6 p, .box7 p, .box10 p{
-    font-size: 15px;
+    font-size: 16px;
     color: #fff;
     text-align: center;
 }
 
-.fourth-section{}
+.box15 h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 45px;
+}
+
+.box15 p{
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.box16 p{
+    font-size: 20px;
+    color: #fff;
+    padding: 8px;
+    text-align: center;
+}
+
+.multiple-items{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#slick img{
+    height: auto;
+    width: 100%;
+    display: block;
+}

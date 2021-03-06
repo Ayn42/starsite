@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -21,76 +23,132 @@
     <section class="background">
 
         <section class="first-section">
-        <div class="box1">
-            <img src="" alt="">
-            <h2>東京でも満点の星空をみよう</h2>
-            <p>忙しい生活の中でもふと星を見上げ、<br>
-                心踊る瞬間がありますように。<br>
-                星空を見たい時にこのサイトが少しでも<br>
-                行き先選択の役に立てますように。<br>
-                そんな思いでこのサイトを制作しました</p>
-        </div>
+            <div class="box1">
+                <img src="" alt="">
+                <h2>東京でも満点の星空をみよう</h2>
+                <p>忙しい生活の中でもふと星を見上げ、<br>
+                    心踊る瞬間がありますように。<br>
+                    星空を見たい時にこのサイトが少しでも<br>
+                    行き先選択の役に立てますように。<br>
+                    そんな思いでこのサイトを制作しました</p>
+            </div>
         </section>
 
         <section class="second-section">
             <div class="box2">
-            <h2>Weather at Tokyo</h2>
-            <p>星が一番綺麗に見えるのはいつだろう</p>
+                <h2>Weather at Tokyo</h2>
+                <p>星が一番綺麗に見えるのはいつだろう</p>
             </div>
 
             <div class="box3">
                 <!--    天気のAPI-->
-                <div class="mamewaza_weather"><div><div class="mamewaza_weather_exp"></div></div></div><script type="text/javascript" src="https://mamewaza.net/weather.js?200804"></script><script type="text/javascript">mamewaza_weather({layout:"horizontal",when:"7days",region:"130010",css:"div.mamewaza_weather > div{background-color:transparent;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:3px solid #eeeeee;border-image-width:0 0 1;border-image-slice:3;border-image-repeat:round;border-image-outset:1px;border-image-source:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20viewBox%3D%220%200%20114%20114%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2238px%22%20height%3D%2238px%22%3E%3Cpath%20d%3D%22M109.504%2017.577c-6.892%203.237-3.052%207.495%202.28%205.472-.086-1.673-.69-4.512-2.28-5.473zm-1.405%2014.9c-1.245%208.206%205.608%206.716%205.843%201.427-2.21-.623-3.084-2.237-5.844-1.428zm3.526%2032.946c-6.89%203.237-3.052%207.495%202.28%205.472-.086-1.672-.69-4.51-2.28-5.472zm-5.963%2015.405c-1.243%208.207%205.61%206.717%205.844%201.428-2.21-.623-3.083-2.237-5.844-1.428zM108.43%2046.3c-1.215%205.696-.64%2012.233%205.476%207.195l-.133-4.74-5.343-2.454zm.094%2048.043c-1.215%205.695-.64%2012.23%205.476%207.194l-.134-4.74-5.342-2.454zM5.12%2017.726c-6.89%203.238-3.052%207.496%202.28%205.473-.086-1.673-.69-4.512-2.28-5.474zm99.98%2086.716c-1.242%208.207%205.61%206.717%205.846%201.428-2.21-.623-3.084-2.237-5.845-1.428zM3.186%202.49c-1.243%208.207%205.61%206.717%205.844%201.428C6.82%203.295%205.944%201.68%203.184%202.49zM.187%2032.476c-1.243%208.207%205.61%206.717%205.845%201.428-2.21-.623-3.084-2.237-5.845-1.428zm3.528%2032.947c-6.892%203.237-3.052%207.495%202.28%205.472-.086-1.672-.69-4.51-2.28-5.472zM1.555%2080.9c-1.242%208.206%205.61%206.716%205.845%201.427-2.21-.623-3.084-2.237-5.844-1.428zM.52%2046.3c-1.216%205.696-.64%2012.233%205.475%207.195l-.133-4.74L.52%2046.3zm.093%2048.043c-1.216%205.695-.64%2012.23%205.476%207.194l-.135-4.74-5.342-2.454zm14.524%2014.762c3.236%206.894%207.493%203.053%205.47-2.28-1.67.086-4.51.69-5.47%202.28zm15.06%204.69c8.205%201.244%206.715-5.61%201.428-5.846-.623%202.21-2.236%203.084-1.427%205.846zm32.75-3.565c3.237%206.894%207.494%203.053%205.472-2.28-1.673.085-4.51.69-5.472%202.28zm15.434%202.628c8.206%201.244%206.716-5.61%201.43-5.846-.624%202.21-2.237%203.085-1.428%205.846zm-34.557.623c5.692%201.216%2012.227.64%207.19-5.477l-4.74.133-2.45%205.345zm47.96%200c5.693%201.216%2012.227.64%207.192-5.477l-4.74.133-2.452%205.345zm9.984-108.585C98.53-2%2094.274%201.842%2096.297%207.175c1.67-.086%204.51-.69%205.47-2.28zM8.77%20105.155c-8.204-1.244-6.714%205.61-1.427%205.846.623-2.21%202.236-3.084%201.428-5.845zM110.688%203.203c-8.204-1.243-6.715%205.61-1.428%205.847.622-2.21%202.235-3.085%201.427-5.847zM86.707.205C78.5-1.04%2079.99%205.815%2085.278%206.05c.622-2.21%202.235-3.084%201.426-5.845zM53.956%203.77c-3.238-6.894-7.494-3.053-5.472%202.28%201.672-.085%204.51-.69%205.47-2.28zM38.52%201.142c-8.204-1.244-6.714%205.61-1.428%205.846.624-2.21%202.237-3.085%201.428-5.846zM73.082.52C67.388-.697%2060.853-.12%2065.89%205.996l4.74-.133L73.08.52zm-47.96%200c-5.694-1.216-12.228-.64-7.193%205.477l4.74-.133L25.12.52z%22%20fill%3D%22%23eeeeee%22%2F%3E%3C%2Fsvg%3E);}div.mamewaza_weather,div.mamewaza_weather a{color:#ffffff;}div.mamewaza_weather span.mamewaza_weather_icon{color:#ffffff;font-size:36px;text-shadow:rgba(255,255,255,0.5) 0 1px 0,rgba(0,0,0,0.5) 1px 2px 2px;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#16265b;font-size:10px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#ffffff;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#ffffff;}",style:"div.mamewaza_weather > div{background-color:rgba(0,0,0,0.5);}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:3px solid #eeeeee;border-image-width:0 0 1;border-image-slice:3;border-image-repeat:round;border-image-outset:1px;border-image-source:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20viewBox%3D%220%200%20114%20114%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2238px%22%20height%3D%2238px%22%3E%3Cpath%20d%3D%22M109.504%2017.577c-6.892%203.237-3.052%207.495%202.28%205.472-.086-1.673-.69-4.512-2.28-5.473zm-1.405%2014.9c-1.245%208.206%205.608%206.716%205.843%201.427-2.21-.623-3.084-2.237-5.844-1.428zm3.526%2032.946c-6.89%203.237-3.052%207.495%202.28%205.472-.086-1.672-.69-4.51-2.28-5.472zm-5.963%2015.405c-1.243%208.207%205.61%206.717%205.844%201.428-2.21-.623-3.083-2.237-5.844-1.428zM108.43%2046.3c-1.215%205.696-.64%2012.233%205.476%207.195l-.133-4.74-5.343-2.454zm.094%2048.043c-1.215%205.695-.64%2012.23%205.476%207.194l-.134-4.74-5.342-2.454zM5.12%2017.726c-6.89%203.238-3.052%207.496%202.28%205.473-.086-1.673-.69-4.512-2.28-5.474zm99.98%2086.716c-1.242%208.207%205.61%206.717%205.846%201.428-2.21-.623-3.084-2.237-5.845-1.428zM3.186%202.49c-1.243%208.207%205.61%206.717%205.844%201.428C6.82%203.295%205.944%201.68%203.184%202.49zM.187%2032.476c-1.243%208.207%205.61%206.717%205.845%201.428-2.21-.623-3.084-2.237-5.845-1.428zm3.528%2032.947c-6.892%203.237-3.052%207.495%202.28%205.472-.086-1.672-.69-4.51-2.28-5.472zM1.555%2080.9c-1.242%208.206%205.61%206.716%205.845%201.427-2.21-.623-3.084-2.237-5.844-1.428zM.52%2046.3c-1.216%205.696-.64%2012.233%205.475%207.195l-.133-4.74L.52%2046.3zm.093%2048.043c-1.216%205.695-.64%2012.23%205.476%207.194l-.135-4.74-5.342-2.454zm14.524%2014.762c3.236%206.894%207.493%203.053%205.47-2.28-1.67.086-4.51.69-5.47%202.28zm15.06%204.69c8.205%201.244%206.715-5.61%201.428-5.846-.623%202.21-2.236%203.084-1.427%205.846zm32.75-3.565c3.237%206.894%207.494%203.053%205.472-2.28-1.673.085-4.51.69-5.472%202.28zm15.434%202.628c8.206%201.244%206.716-5.61%201.43-5.846-.624%202.21-2.237%203.085-1.428%205.846zm-34.557.623c5.692%201.216%2012.227.64%207.19-5.477l-4.74.133-2.45%205.345zm47.96%200c5.693%201.216%2012.227.64%207.192-5.477l-4.74.133-2.452%205.345zm9.984-108.585C98.53-2%2094.274%201.842%2096.297%207.175c1.67-.086%204.51-.69%205.47-2.28zM8.77%20105.155c-8.204-1.244-6.714%205.61-1.427%205.846.623-2.21%202.236-3.084%201.428-5.845zM110.688%203.203c-8.204-1.243-6.715%205.61-1.428%205.847.622-2.21%202.235-3.085%201.427-5.847zM86.707.205C78.5-1.04%2079.99%205.815%2085.278%206.05c.622-2.21%202.235-3.084%201.426-5.845zM53.956%203.77c-3.238-6.894-7.494-3.053-5.472%202.28%201.672-.085%204.51-.69%205.47-2.28zM38.52%201.142c-8.204-1.244-6.714%205.61-1.428%205.846.624-2.21%202.237-3.085%201.428-5.846zM73.082.52C67.388-.697%2060.853-.12%2065.89%205.996l4.74-.133L73.08.52zm-47.96%200c-5.694-1.216-12.228-.64-7.193%205.477l4.74-.133L25.12.52z%22%20fill%3D%22%23eeeeee%22%2F%3E%3C%2Fsvg%3E);}div.mamewaza_weather,div.mamewaza_weather a{color:#ffffff;}div.mamewaza_weather span.mamewaza_weather_icon{color:#ffffff;font-size:36px;text-shadow:rgba(255,255,255,0.5) 0 1px 0,rgba(0,0,0,0.5) 1px 2px 2px;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#16265b;font-size:10px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#ffffff;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#ffffff;}"})</script>
+                <div class="mamewaza_weather"><div><div class="mamewaza_weather_exp"></div></div></div><script type="text/javascript" src="https://mamewaza.net/weather.js?200804"></script><script type="text/javascript">mamewaza_weather({layout:"horizontal",when:"7days",region:"130010",css:"div.mamewaza_weather > div{background-color:transparent;}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:3px solid #eeeeee;border-image-width:0 0 1;border-image-slice:3;border-image-repeat:round;border-image-outset:1px;border-image-source:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20viewBox%3D%220%200%20114%20114%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2238px%22%20height%3D%2238px%22%3E%3Cpath%20d%3D%22M109.504%2017.577c-6.892%203.237-3.052%207.495%202.28%205.472-.086-1.673-.69-4.512-2.28-5.473zm-1.405%2014.9c-1.245%208.206%205.608%206.716%205.843%201.427-2.21-.623-3.084-2.237-5.844-1.428zm3.526%2032.946c-6.89%203.237-3.052%207.495%202.28%205.472-.086-1.672-.69-4.51-2.28-5.472zm-5.963%2015.405c-1.243%208.207%205.61%206.717%205.844%201.428-2.21-.623-3.083-2.237-5.844-1.428zM108.43%2046.3c-1.215%205.696-.64%2012.233%205.476%207.195l-.133-4.74-5.343-2.454zm.094%2048.043c-1.215%205.695-.64%2012.23%205.476%207.194l-.134-4.74-5.342-2.454zM5.12%2017.726c-6.89%203.238-3.052%207.496%202.28%205.473-.086-1.673-.69-4.512-2.28-5.474zm99.98%2086.716c-1.242%208.207%205.61%206.717%205.846%201.428-2.21-.623-3.084-2.237-5.845-1.428zM3.186%202.49c-1.243%208.207%205.61%206.717%205.844%201.428C6.82%203.295%205.944%201.68%203.184%202.49zM.187%2032.476c-1.243%208.207%205.61%206.717%205.845%201.428-2.21-.623-3.084-2.237-5.845-1.428zm3.528%2032.947c-6.892%203.237-3.052%207.495%202.28%205.472-.086-1.672-.69-4.51-2.28-5.472zM1.555%2080.9c-1.242%208.206%205.61%206.716%205.845%201.427-2.21-.623-3.084-2.237-5.844-1.428zM.52%2046.3c-1.216%205.696-.64%2012.233%205.475%207.195l-.133-4.74L.52%2046.3zm.093%2048.043c-1.216%205.695-.64%2012.23%205.476%207.194l-.135-4.74-5.342-2.454zm14.524%2014.762c3.236%206.894%207.493%203.053%205.47-2.28-1.67.086-4.51.69-5.47%202.28zm15.06%204.69c8.205%201.244%206.715-5.61%201.428-5.846-.623%202.21-2.236%203.084-1.427%205.846zm32.75-3.565c3.237%206.894%207.494%203.053%205.472-2.28-1.673.085-4.51.69-5.472%202.28zm15.434%202.628c8.206%201.244%206.716-5.61%201.43-5.846-.624%202.21-2.237%203.085-1.428%205.846zm-34.557.623c5.692%201.216%2012.227.64%207.19-5.477l-4.74.133-2.45%205.345zm47.96%200c5.693%201.216%2012.227.64%207.192-5.477l-4.74.133-2.452%205.345zm9.984-108.585C98.53-2%2094.274%201.842%2096.297%207.175c1.67-.086%204.51-.69%205.47-2.28zM8.77%20105.155c-8.204-1.244-6.714%205.61-1.427%205.846.623-2.21%202.236-3.084%201.428-5.845zM110.688%203.203c-8.204-1.243-6.715%205.61-1.428%205.847.622-2.21%202.235-3.085%201.427-5.847zM86.707.205C78.5-1.04%2079.99%205.815%2085.278%206.05c.622-2.21%202.235-3.084%201.426-5.845zM53.956%203.77c-3.238-6.894-7.494-3.053-5.472%202.28%201.672-.085%204.51-.69%205.47-2.28zM38.52%201.142c-8.204-1.244-6.714%205.61-1.428%205.846.624-2.21%202.237-3.085%201.428-5.846zM73.082.52C67.388-.697%2060.853-.12%2065.89%205.996l4.74-.133L73.08.52zm-47.96%200c-5.694-1.216-12.228-.64-7.193%205.477l4.74-.133L25.12.52z%22%20fill%3D%22%23eeeeee%22%2F%3E%3C%2Fsvg%3E);}div.mamewaza_weather,div.mamewaza_weather a{color:#ffffff;}div.mamewaza_weather span.mamewaza_weather_icon{color:#ffffff;font-size:36px;text-shadow:rgba(255,255,255,0.5) 0 1px 0,rgba(0,0,0,0.5) 1px 2px 2px;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:#16265b;font-size:10px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#ffffff;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#ffffff;}",style:"div.mamewaza_weather > div{background-color:rgba(0,0,0,0.5);}div.mamewaza_weather th,div.mamewaza_weather td,div.mamewaza_weather div.mamewaza_weather_exp{padding:10px;}div.mamewaza_weather > div{padding:10px;font-size:14px;}div.mamewaza_weather th,div.mamewaza_weather td{border:none;border-bottom:3px solid #eeeeee;border-image-width:0 0 1;border-image-slice:3;border-image-repeat:round;border-image-outset:1px;border-image-source:url(data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20viewBox%3D%220%200%20114%20114%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2238px%22%20height%3D%2238px%22%3E%3Cpath%20d%3D%22M109.504%2017.577c-6.892%203.237-3.052%207.495%202.28%205.472-.086-1.673-.69-4.512-2.28-5.473zm-1.405%2014.9c-1.245%208.206%205.608%206.716%205.843%201.427-2.21-.623-3.084-2.237-5.844-1.428zm3.526%2032.946c-6.89%203.237-3.052%207.495%202.28%205.472-.086-1.672-.69-4.51-2.28-5.472zm-5.963%2015.405c-1.243%208.207%205.61%206.717%205.844%201.428-2.21-.623-3.083-2.237-5.844-1.428zM108.43%2046.3c-1.215%205.696-.64%2012.233%205.476%207.195l-.133-4.74-5.343-2.454zm.094%2048.043c-1.215%205.695-.64%2012.23%205.476%207.194l-.134-4.74-5.342-2.454zM5.12%2017.726c-6.89%203.238-3.052%207.496%202.28%205.473-.086-1.673-.69-4.512-2.28-5.474zm99.98%2086.716c-1.242%208.207%205.61%206.717%205.846%201.428-2.21-.623-3.084-2.237-5.845-1.428zM3.186%202.49c-1.243%208.207%205.61%206.717%205.844%201.428C6.82%203.295%205.944%201.68%203.184%202.49zM.187%2032.476c-1.243%208.207%205.61%206.717%205.845%201.428-2.21-.623-3.084-2.237-5.845-1.428zm3.528%2032.947c-6.892%203.237-3.052%207.495%202.28%205.472-.086-1.672-.69-4.51-2.28-5.472zM1.555%2080.9c-1.242%208.206%205.61%206.716%205.845%201.427-2.21-.623-3.084-2.237-5.844-1.428zM.52%2046.3c-1.216%205.696-.64%2012.233%205.475%207.195l-.133-4.74L.52%2046.3zm.093%2048.043c-1.216%205.695-.64%2012.23%205.476%207.194l-.135-4.74-5.342-2.454zm14.524%2014.762c3.236%206.894%207.493%203.053%205.47-2.28-1.67.086-4.51.69-5.47%202.28zm15.06%204.69c8.205%201.244%206.715-5.61%201.428-5.846-.623%202.21-2.236%203.084-1.427%205.846zm32.75-3.565c3.237%206.894%207.494%203.053%205.472-2.28-1.673.085-4.51.69-5.472%202.28zm15.434%202.628c8.206%201.244%206.716-5.61%201.43-5.846-.624%202.21-2.237%203.085-1.428%205.846zm-34.557.623c5.692%201.216%2012.227.64%207.19-5.477l-4.74.133-2.45%205.345zm47.96%200c5.693%201.216%2012.227.64%207.192-5.477l-4.74.133-2.452%205.345zm9.984-108.585C98.53-2%2094.274%201.842%2096.297%207.175c1.67-.086%204.51-.69%205.47-2.28zM8.77%20105.155c-8.204-1.244-6.714%205.61-1.427%205.846.623-2.21%202.236-3.084%201.428-5.845zM110.688%203.203c-8.204-1.243-6.715%205.61-1.428%205.847.622-2.21%202.235-3.085%201.427-5.847zM86.707.205C78.5-1.04%2079.99%205.815%2085.278%206.05c.622-2.21%202.235-3.084%201.426-5.845zM53.956%203.77c-3.238-6.894-7.494-3.053-5.472%202.28%201.672-.085%204.51-.69%205.47-2.28zM38.52%201.142c-8.204-1.244-6.714%205.61-1.428%205.846.624-2.21%202.237-3.085%201.428-5.846zM73.082.52C67.388-.697%2060.853-.12%2065.89%205.996l4.74-.133L73.08.52zm-47.96%200c-5.694-1.216-12.228-.64-7.193%205.477l4.74-.133L25.12.52z%22%20fill%3D%22%23eeeeee%22%2F%3E%3C%2Fsvg%3E);}div.mamewaza_weather,div.mamewaza_weather a{color:#ffffff;}div.mamewaza_weather span.mamewaza_weather_icon{color:#ffffff;font-size:36px;text-shadow:rgba(255,255,255,0.5) 0 1px 0,rgba(0,0,0,0.5) 1px 2px 2px;}div.mamewaza_weather div.mamewaza_weather_exp,div.mamewaza_weather div.mamewaza_weather_exp a{color:rgba(0,0,0,0.5);font-size:10px;}div.mamewaza_weather td.mamewaza_weather_sat,div.mamewaza_weather td.mamewaza_weather_sat span.mamewaza_weather_icon{color:#ffffff;}div.mamewaza_weather td.mamewaza_weather_sun,div.mamewaza_weather td.mamewaza_weather_sun span.mamewaza_weather_icon{color:#ffffff;}"})</script>
             </div>
         </section>
 
         <section class="third-section">
-        <div class="box4">
-        <h2>Beautiful stars spot</h2>
-        <p>東京で星が綺麗に見える場所の紹介</p>
-        </div>
+            <div class="box4">
+                <h2>Beautiful stars spot</h2>
+                <p>東京で星が綺麗に見える場所の紹介</p>
+            </div>
 
-       <div class="container1">
-         <div class="box5">
-            <img src="image/okutamako.jpg">
-         </div>
+            <div class="container1">
+                <div class="box5">
+                    <img src="image/okutamako.jpg">
+                </div>
 
-         <div class="box6">
-            <h2>奥多摩湖</h2>
-            <p>【電車】東京駅から奥多摩2時間<br>
-                【車】東京駅から1時間45分　1265円</p>
-         </div>
-        </div>
+                <div class="box6">
+                    <h2>奥多摩湖</h2>
+                    <p>【電車】東京駅から奥多摩2時間<br>
+                        【車】東京駅から1時間45分 1265円</p>
+                </div>
+            </div>
 
-       <div class="container2">
-       
-       <div class="box7">
-            <h2>高尾山</h2>
-            <p>【電車】東京駅から奥多摩1時間18分<br>
-                【車】東京駅から1時間45分 1076円</p>
-        </div>
-        <div class="box8">
-            <img src="image/mt.takao.jpg" alt="">
-        </div>
-        </div>
-        
-        <div class="container3">
-        <div class="box9">
-<!--       　-->
-        </div>
-        
-        <div class="box10">
-            <h2>夢の島の公園</h2>
-            <p>【電車】東京駅から新木場22分168円<br>
-                【車】東京駅から24分</p>
-        </div>
-        </div>
+            <div class="container2">
+
+                <div class="box7">
+                    <h2>高尾山</h2>
+                    <p>【電車】東京駅から奥多摩1時間18分<br>
+                        【車】東京駅から1時間45分 1076円</p>
+                </div>
+                <div class="box8">
+                    <img src="image/mt.takao.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="container3">
+                <div class="box9">
+                    <img src="image/park.jpg" alt="">
+                </div>
+
+                <div class="box10">
+                    <h2>夢の島の公園</h2>
+                    <p>【電車】東京駅から新木場22分168円<br>
+                        【車】東京駅から24分</p>
+                </div>
+            </div>
         </section>
 
+        <section class="fourth-section">
+            <div class="box11">
+                <h2>Planetarium</h2>
+                <p>都内でオススメのプラネタリウム</p>
+            </div>
 
-        <section class="fourth-section"></section>
-
+            <div class="multiple-items" id="slick">
+                <img src="image/mt.takao.jpg" alt="">
+                <img src="image/okutamako.jpg" alt="">
+                <img src="image/park.jpg" alt="">
+            </div>
+        </section>
+        
+        <section class="fifth-section">
+            <div class="box12">
+                <h2>Constellation</h2>
+                <p>季節ごとの星座</p>
+            </div>
+            
+            <div class="container4">
+<!--星座早見表をおく-->
+                <div class="box13">
+                    <img src="image/mt.takao.jpg" alt="">
+                </div>
+<!--星座のボタンを置く-->
+                <div class="box14"></div>
+            </div>
+        </section>
+        
+    <section class="six-section">
+        <div class="box15">
+            <h2>Meteor Shower</h2>
+            <p>2021年の流星群情報</p>
+        </div>
+        <div class="box16">
+            <p>5/6【水瓶座流星群】<br>
+                7/17〜8/24 【ペルセウス座流星群】<br>
+                （ピークは8/12.13日）<br>
+                8/31〜9/1 【ぎょしゃ座流星群】<br>
+                12/4〜12/17 【ふたご座流星群】<br>
+                （ピークが日中のため見えにくい）
+            </p>
+        </div>
+    </section>    
+        
+        
+        
     </section>
+
+    <!--    JSの準備-->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<!-- slickの導入-->
+    <script>
+        $('.multiple-items').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+    </script>
 </body>
 
 </html>
