@@ -27,12 +27,15 @@
     margin:20px;
 }
 
-.background img{
+.background{
     position: absolute;
     width: 100%;
     top: 20;
     right: 0;
     z-index: -900;
+    background-image: url(image/nightsky.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
 }
 
 .first-section{
@@ -99,10 +102,41 @@
 }
 
 .mamewaza_weather{
-    padding-top:40   px;
+    padding-top:40px;
     width: 60vw;
     margin:0 auto;
     z-index: 700;
+}
+
+.container1, .container2, .container3{
+    display: flex;
+    margin: 0 auto;
+    width: 80vw;
+    height: 50vh;
+    align-items: center;
+}
+
+.box5, .box6, .box7, .box8, .box9 ,.box10{
+    width: 50%;
+}
+
+
+.box5 img, .box8 img, .box9 img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.box6 h2, .box7 h2, .box10 h2{
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.box6 p, .box7 p, .box10 p{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
 }
 
 .fourth-section{}
