@@ -5,6 +5,7 @@
 
 .nav{
     display: flex;
+    background-color: black;
 }
 
 .nav nav{
@@ -19,12 +20,14 @@
 .nav li{
     list-style: none;
     float: left;
+    margin: 0 auto;
 }
 
 .nav a{
     display: flex;
     text-decoration: none;
-    margin:20px;
+    margin:20px; 
+    color: #fff;
 }
 
 .background{
@@ -162,4 +165,10 @@
     height: auto;
     width: 100%;
     display: block;
+}
+
+footer{
+    color: #fff;
+    text-align: center;
+    background-color: black;
 }
