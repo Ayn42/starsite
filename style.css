@@ -49,6 +49,7 @@
 .third-section{
     width: 100vw;
     height: auto;
+    position: relative;
 }
 
 .image img{
@@ -93,10 +94,32 @@
 #weather img{
     position: relative;
     z-index: -200;
+    width: 30vw;
+    height: 30vh;
 }
 
 .box2{
     position: absolute;
+    left: 0;
+    top:10vh;
+    z-index: 300;
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    padding-left: 20px;
+}
+
+.box2 h2{
+    font-size: 38px;
+    color: #fff;
+    z-index: 200;
+}
+
+.box2 p{
+    font-size: 20px;
+    color: #fff;
+    z-index: 200;
+    padding-left: 20px;
 }
 
 
@@ -104,13 +127,13 @@
     padding: 50px;
 }
 
-.box2 h2, .box11 h2, .box12 h2{
-    font-size: 45px;
+.box11 h2, .box12 h2{
+    font-size: 38px;
     color: #fff;
     z-index: 200;
 }
 
-.box2 p, .box11 p, .box12 p{
+.box11 p, .box12 p{
     font-size: 20px;
     color: #fff;
     z-index: 200;
@@ -127,14 +150,31 @@
     height: 50vh;
 }
 
+#spot img{
+    position: relative;
+    z-index: -200;
+    width: 30vw;
+    height: 30vh;
+}
+
+.box4{
+    position: absolute;
+    top:0;
+    right:0;
+    width: 50vw;
+    height: 50vh;
+}
+
 .box4 h2{
-    font-size: 45px;
+    font-size: 38px;
     color: #fff;
+    z-index: 200;
 }
 
 .box4 p{
     font-size: 20px;
     color: #fff;
+    z-index: 200;
 }
 
 .mamewaza_weather{
