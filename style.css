@@ -123,7 +123,7 @@
 }
 
 
-.box11, .box12, .box15 {
+.box11, .box12 {
     padding: 50px;
 }
 
@@ -267,11 +267,45 @@
     color: #fff;
 }
 
+.box16 img{
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    z-index: -200;
+}
+
+/*
 .box16 p{
     font-size: 20px;
     color: #fff;
     padding: 8px;
-    text-align: center;
+    z-index: 200;
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin: auto;
+}
+*/
+
+.information{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin: auto;
+    z-index: 200;
+    width: 30vw;
+    height: 30vh;
+    color: #fff;
+    font-size: 25px;
 }
 
 .multiple-items{
