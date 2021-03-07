@@ -10,7 +10,6 @@
 
 .nav nav{
     position:absolute;
-    top:20px;
 }
 
 .nav ul{
@@ -39,12 +38,12 @@
     background-image: url(image/nightsky.jpg);
     background-size: contain;
     background-repeat: repeat-y;
-    background-color: navy;
 }
 
 .first-section, .second-section, .fourth-section, .fifth-section{
     width: 100vw;
     height: 100vh;
+    position: relative;
 }
 
 .third-section{
@@ -52,23 +51,43 @@
     height: auto;
 }
 
+.image img{
+    display: block;
+    position: absolute;
+    top:0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: -200;
+    width: 60vw;
+    height: 60vh;
+}
+
 .box1{
     display: block;
-    position: relative;
+    position: absolute;
+    top:150px;
+    bottom: 0;
+    right:0;
+    left: 0;
+    margin: auto;
+    width:50vw;
+    height:50vh;
 }
 
 .box1 h2{
     text-align: center;
     font-size: 45px;
     color: #fff;
-    padding: 40px;
+    z-index: 900;
 }
 
 .box1 p{
     font-size: 20px;
     text-align: center;
     color: #fff;
-    padding: 40px;    
+    z-index: 900;
 }
 
 .box2, .box11, .box12, .box15 {
@@ -171,4 +190,12 @@ footer{
     color: #fff;
     text-align: center;
     background-color: black;
+}
+
+@media all & (min-width:1900px){
+    
+    .box1{
+    top:300px;
+}
+    
 }
