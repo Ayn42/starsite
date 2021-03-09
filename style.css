@@ -69,6 +69,7 @@
     position: relative;
 }
 
+
 .image img{
     display: block;
     position: absolute;
@@ -77,7 +78,6 @@
     left: 0;
     bottom: 0;
     margin: auto;
-    z-index: -200;
     width: 60vw;
     height: 60vh;
 }
@@ -85,13 +85,14 @@
 .box1{
     display: block;
     position: absolute;
-    top:150px;
+    top:0;
     bottom: 0;
     right:0;
     left: 0;
     margin: auto;
     width:50vw;
     height:50vh;
+    font-family: "筑紫B丸ゴシック";
 }
 
 .box1 h2{
@@ -130,6 +131,7 @@
     font-size: 38px;
     color: #fff;
     z-index: 200;
+    font-family: "Arvo";
 }
 
 .box2 p{
@@ -137,6 +139,7 @@
     color: #fff;
     z-index: 200;
     padding-left: 20px;
+    font-family: "筑紫B丸ゴシック";
 }
 
 .planetarium{
@@ -149,6 +152,7 @@
     font-size: 38px;
     color: #fff;
     z-index: 200;
+    font-family: "Arvo";
 }
 
 .planetarium p{
@@ -161,6 +165,14 @@
      position: absolute;
      top:5vh;
      right:5vw;
+}
+
+.constellation h2{
+    font-family: "Arvo";
+}
+
+.constellation p{
+    font-family: "筑紫B丸ゴシック";
 }
 
 .box12 img{
@@ -216,12 +228,14 @@
     font-size: 38px;
     color: #fff;
     z-index: 200;
+    font-family: "Arvo";
 }
 
 .box4 p{
     font-size: 20px;
     color: #fff;
     z-index: 200;
+    font-family: "筑紫B丸ゴシック";
 }
 
 .mamewaza_weather{
@@ -248,7 +262,7 @@
     padding-top:200px;
 }
 
- .box7, .box8, .box9, .box14{
+ .box7, .box8, .box9{
     width: 50%;
 }
 
@@ -266,6 +280,10 @@
     bottom:0;
     left:0;
     margin: auto;
+}
+
+.font{
+    font-family: "筑紫B丸ゴシック";
 }
 
 .box6 h2{
@@ -342,6 +360,7 @@
     width: 30vw;
     height: 30vh;
     z-index: 10;
+    font-family: "Arvo";
 }
 
 
@@ -355,9 +374,8 @@
     font-size: 20px;
     text-align: center;
     color: #fff;
+    font-family: "筑紫B丸ゴシック";
 }
-
-
 
 .box16 img{
     position: absolute;
@@ -383,6 +401,7 @@
     height: 30vh;
     color: #fff;
     font-size: 25px;
+    font-family: "筑紫B丸ゴシック";
 }
 
 .multiple-items{
