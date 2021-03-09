@@ -46,16 +46,18 @@
     background-repeat: repeat-y;
 }
 
-.container{
+.contain{
     max-width: 1024px;
-    width: 100%;
-    height: 100%;
     margin: auto auto;
+/*    background-image: url(image/object1.png);*/
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 360px;
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    position: relative; 
 }
 
 .full-view{
@@ -90,6 +92,7 @@
     top:0;
     bottom:0;
     right:0;
+    left:0;
     display: flex;
     flex-direction: column;
     padding-top:100px;    
@@ -100,6 +103,7 @@
     font-size: 45px;
     color: #fff;
     z-index: 900;
+    font-family: "筑紫B丸ゴシック";
 }
 
 .box1 p{
@@ -107,6 +111,7 @@
     text-align: center;
     color: #fff;
     z-index: 900;
+    font-family: "筑紫B丸ゴシック";
 }
 
 #weather img{
@@ -158,7 +163,8 @@
 .planetarium p{
    font-size: 20px;
     color: #fff;
-    z-index: 200; 
+    z-index: 200;
+    font-family: "筑紫B丸ゴシック";
 }
 
  .constellation {
