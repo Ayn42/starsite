@@ -541,6 +541,27 @@ a.btn-border-shadow--color:before {
   border-radius: 0;
 }
 
+/*Bx-slliderの実装*/
+.bx-viewport{
+            height: 500px!Important;
+        }
+        .bxslider img {
+            display: block;
+            margin: 0 auto;
+        }
+        .parent{
+            position: relative;
+        }
+        .parent .slidemozi{
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform:  translateX(-50%);
+            -o-transform:  translateX(-50%);
+            transform:  translateX(-50%);
+        }
+
 @font-face{
     font-family: 'Arvo';
     src:url(./Arvo-Regular.ttf)
