@@ -34,6 +34,8 @@
 .header-section video{
     width: 100%;
     height: 100%;
+/*    サイズをぴったり合わせる*/
+    object-fit: cover;
     z-index: -900;
 }
 
@@ -458,6 +460,7 @@ footer{
     text-align: center;
     background-color: black;
 }
+
 
 /*ボタンの実装*/
 HTML CSS Result Skip Results Iframe
