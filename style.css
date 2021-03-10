@@ -72,7 +72,6 @@
     position: relative;
 }
 
-
 .image img{
     display: block;
     position: absolute;
@@ -256,66 +255,69 @@
     z-index: 700;
 }
 
-.container1, .container2, .container3, .container4{
+.container2, .container3{
     display: flex;
-    margin: 0 auto;
-    width: 80vw;
-    height: 50vh;
     align-items: center;
+    justify-content: center;
+    padding-top: 100px;
 }
 
 .container1{
     display: flex;
-    margin: 0 auto;
-    width: 80vw;
-    height: 50vh;
     align-items: center;
+    justify-content: center;
     padding-top:200px;
 }
 
- .box7, .box8, .box9{
-    width: 50%;
-}
-
-.box6, .box7, .box10{
-    width: 50%;
-    position: relative;
-}
-
-.box6 img, .box7 img, .box10 img{
-    width: 80%;
-    z-index: -900;
-    position: absolute;
-    top:0;
-    right:0;
-    bottom:0;
-    left:0;
-    margin: auto;
-}
 
 .font{
     font-family: "筑紫B丸ゴシック";
+    width: 500px;
+    margin: 0 auto;
+    color: #203764;
+    z-index: 200;
 }
 
 .box6 h2{
     font-size: 30px;
-    color: #fff;
     text-align: center;
 }
 
 .box6 p{
     font-size: 16px;
-    color: #fff;
     text-align: center;
 }
 
-.box5{
+.left-box{
+    width: 500px;
+    margin: 20px;
+    line-height: 2;
+}
+
+.right-box{
+    width: 500px;
+    margin: 20px;
+    line-height: 2;
     position: relative;
 }
 
-.box5 img, .box8 img, .box9 img{
-    width: 70%;
+.left-box img{
+    width: 500px;
+    margin: 0 auto;
 }
+
+.right-box img{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    z-index: -200;
+}
+
 
 .box11 img{
     width: 30vw;
@@ -324,13 +326,11 @@
 
 .box7 h2, .box10 h2{
     font-size: 30px;
-    color: #fff;
     text-align: center;
 }
 
 .box7 p, .box10 p{
     font-size: 16px;
-    color: #fff;
     text-align: center;
 }
 
@@ -415,8 +415,23 @@
     font-family: "筑紫B丸ゴシック";
 }
 
+.slider{
+    position: relative;
+}
 
+.slider img{
+    position:absolute;
+}
 
+.slidemozi{
+    position: absolute;
+    z-index: 200;
+    font-family: "筑紫B丸ゴシック";
+}
+
+.slidemozi a{
+    font-size: 10px;
+}
 
 .multiple-items{
     width: 80%;
@@ -433,6 +448,11 @@ footer{
     color: #fff;
     text-align: center;
     background-color: black;
+}
+
+@font-face{
+    font-family: 'Arvo';
+    src:url(./Arvo-Regular.ttf)
 }
 
 @media all & (min-width:1900px){
