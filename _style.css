@@ -1,0 +1,190 @@
+body {
+    width: 100%;
+    background-image: url(image/nightsky.jpg);
+    background-size:cover;
+    background-repeat: repeat-y;
+    font-family: "筑紫B丸ゴシック";
+    color: white;
+    line-height: 1.8;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+.nav{
+    display: flex;
+    background-color: black;
+}
+.nav nav{ position:absolute; }
+.nav ul{ margin:0 auto; }
+.nav li{
+    list-style: none;
+    float: left;
+    margin: 0 auto;
+}
+.nav a{
+    display: flex;
+    text-decoration: none;
+    margin:20px; 
+    color: #fff;
+    font-size: 20px;
+    font-family: "筑紫B丸ゴシック";
+}
+
+.container {
+    margin: auto;
+    width: 1080px;
+}
+
+.section {
+    /* padding: 2em 0 3em; */
+}
+
+.section_title {
+    padding: 3em;
+    margin-bottom: 3em;
+    line-height: 2;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+#sec0 {
+    position: relative;
+}
+
+#sec0 .section_title {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 30%;
+    margin: auto 3em;
+    background-image: url(SVG/sec0.svg);
+}
+
+#sec0 video {
+    width: 100%;
+    height: 100%;
+    /*サイズをぴったり合わせる*/
+    object-fit: cover;
+    z-index: -900;
+}
+
+#sec1 {
+    padding: 10em 0;
+}
+
+#sec1 .section_title {
+    
+}
+.spot_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.font{
+    font-family: "筑紫B丸ゴシック";
+    margin: 0 auto;
+    color: #203764;
+    z-index: 200;
+}
+
+.font h2{
+    font-size: 30px;
+    text-align: center;
+}
+
+.font p{
+    font-size: 16px;
+    text-align: center;
+}
+
+.left-box{
+    width: 500px;
+/*    margin: 20px;*/
+    line-height: 2;
+}
+
+.right-box{
+    max-width: 500px;
+    margin: 20px;
+    line-height: 2;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.69)
+}
+
+.left-box img{
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+.section_title h2 {
+    font-family: "Arvo";
+}
+
+/* これは横着 */
+.section:last-of-type {
+    margin-bottom: 20em;
+}
+
+@font-face{
+    font-family: 'Arvo';
+    src:url(./Arvo-Regular.ttf)
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        font-size: .8em;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    #sec0 video {
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .section_content {
+        padding: .5em;
+    }
+    
+    .left-box img {
+        width: 100%;
+    }
+    
+    .right-box img {
+        width: 100%;
+    }
+    
+    .spot_content{
+        margin-bottom: 5em;
+    }
+    
+    .font{
+        padding: 1em;
+    }
+    
+    .spot_content{
+        flex-wrap: wrap;
+    }
+    
+    .spot_content:nth-of-type(even){
+        flex-wrap: wrap-reverse;
+    }
+
+}

@@ -434,12 +434,6 @@
     position:absolute;
 }
 
-.slidemozi{
-    position: absolute;
-    z-index: 200;
-    font-family: "筑紫B丸ゴシック";
-}
-
 .slidemozi a{
     font-size: 10px;
 }
@@ -551,7 +545,9 @@ a.btn-border-shadow--color:before {
         }
         .parent{
             position: relative;
+            display: flex;
         }
+/*
         .parent .slidemozi{
             position: absolute;
             top: 0%;
@@ -561,16 +557,25 @@ a.btn-border-shadow--color:before {
             -o-transform:  translateX(-50%);
             transform:  translateX(-50%);
         }
+*/
+
+.slidemozi{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    font-family: "筑紫B丸ゴシック";
+}
 
 @font-face{
-    font-family: 'Arvo';
+    font-family:'Arvo';
     src:url(./Arvo-Regular.ttf)
 }
 
-@media all & (min-width:1900px){
-    
-    .box1{
-    top:300px;
-}
+/*スマホ版のCSSを書いていきます*/
+@media screen and (max-width: 480px){
+    .nav{
+        display: none;
+    }
     
 }
