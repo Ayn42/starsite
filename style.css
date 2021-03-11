@@ -232,7 +232,7 @@ p {
 }
 
 .slidemozi a {
-    font-size: 0.00000001em;
+    font-size: 1em;
     color: #4458f2;
 }
 
@@ -307,12 +307,12 @@ button.btn {
   border-radius: 0.5rem;
 }
 
-button.btn-border-shadow {
+a.btn-border-shadow {
   padding: calc(1.5rem - 12px) 3rem 1.5rem;
   background: #fff;
 }
 
-button.btn-border-shadow:before {
+a.btn-border-shadow:before {
   position: absolute;
   top: -6px;
   left: -6px;
@@ -328,21 +328,21 @@ button.btn-border-shadow:before {
   border-radius: 0.5rem;
 }
 
-button.btn-border-shadow:hover {
+a.btn-border-shadow:hover {
   padding: calc(1.5rem - 6px) 3rem;
 }
 
-button.btn-border-shadow:hover:before {
+a.btn-border-shadow:hover:before {
   top: 0;
   left: 0;
 }
 
-button.btn-border-shadow--color {
+a.btn-border-shadow--color {
   border-radius: 0;
   background: rgba(11, 14, 83, 0.82);
 }
 
-button.btn-border-shadow--color:before {
+a.btn-border-shadow--color:before {
   border-radius: 2px;
 }
 
