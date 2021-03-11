@@ -18,7 +18,7 @@
     <script>
         $(document).ready(function() {
             var slideCount = 3;
-            if ( $('#nav').css('display')=='none' ) {
+            if ($('#nav').css('display') == 'none') {
                 slideCount = 1;
             }
             $('.bxslider').bxSlider({
@@ -204,6 +204,15 @@
             <div class="section_title">
                 <h2>Costellation</h2>
                 <p>季節ごとの星座</p>
+            </div>
+            <!--星座のボタンを置く-->
+            <div class="section_content">
+                <div class="buttons">
+                    <button class="btn btn-border-shadow btn-border-shadow--color">春の星座</button>
+                    <button class="btn btn-border-shadow btn-border-shadow--color">夏の星座</button>
+                    <button class="btn btn-border-shadow btn-border-shadow--color">秋の星座</button>
+                    <button class="btn btn-border-shadow btn-border-shadow--color">冬の星座</button>
+                </div>
             </div>
         </div>
 
