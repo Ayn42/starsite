@@ -353,7 +353,6 @@ button.btn-border-shadow--color:before {
 }
 
 /*ふわっと表示させるアニメーション*/
-/*
 .fade-in {
   opacity: 0;
   transition-duration: 500ms;
@@ -380,10 +379,6 @@ button.btn-border-shadow--color:before {
   opacity: 1;
   transform: translate(0, 0);
 }
-*/
-
-
-
 
 
 

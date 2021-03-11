@@ -25,8 +25,8 @@
                 auto: false,
                 pause: 6000,
                 speed: 1000,
-                minSlides: slideCount,
-                maxSlides: slideCount,
+                minSlides: 3,
+                maxSlides: 3,
                 slideMargin: 10,
                 slideWidth: 600,
                 pager: true,
@@ -39,20 +39,20 @@
                 var image = $(this).attr('path');
                 $(".hayamihyou").attr('src', image);
             });
-            
-//            jQuery(function ($) {
-//              var fadeIn = $('.fade-in');
-//              $(window).on('scroll', function () {
-//                $(fadeIn).each(function () {
-//                  var offset = $(this).offset().top;
-//                  var scroll = $(window).scrollTop(); 
-//                  var windowHeight = $(window).height();
-//                  if (scroll > offset - windowHeight + 150) {
-//                    $(this).addClass("scroll-in");
-//                  }
-//                });
-//              });
-//            });
+  
+        jQuery(function ($) {
+          var fadeIn = $('.fade-in');
+          $(window).on('scroll', function () {
+          $(fadeIn).each(function () {
+           var offset = $(this).offset().top;
+           var scroll = $(window).scrollTop(); 
+           var windowHeight = $(window).height();
+           if (scroll > offset - windowHeight + 150) {
+          $(this).addClass("scroll-in");
+       }
+    });
+  });
+});
         });
     </script>
 
@@ -245,7 +245,7 @@
             </div>
         </div>
 
-        <div class="section fade-in fade-in-up" id="sec5">
+        <div class="section fade-in fade-in-down" id="sec5">
             <div class="section_title">
                 <h2>Meteor Shower</h2>
                 <p>2021年の流星群情報</p>
