@@ -220,11 +220,11 @@ p {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
     transform: translateX(-50%);
-    color: #121429;
+    color: rgb(26, 33, 97);
 }
 
 .slidemozi h2 {
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-style: bold;
 }
 
