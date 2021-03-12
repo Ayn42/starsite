@@ -104,6 +104,7 @@ p {
 
 #sec1 .section_title {
     background-image: url(SVG/sec1.svg);
+    left:3em;
 }
 
 #sec2 .section_title {
@@ -234,6 +235,7 @@ p {
 .slidemozi a {
     font-size: 1em;
     color: #4458f2;
+    z-index: 200;
 }
 
 .bx-wrapper {
@@ -355,7 +357,7 @@ a.btn-border-shadow--color:before {
 /*ふわっと表示させるアニメーション*/
 .fade-in {
   opacity: 0;
-  transition-duration: 500ms;
+  transition-duration: 1000ms;
   transition-property: opacity, transform;
 }
 
@@ -378,6 +380,10 @@ a.btn-border-shadow--color:before {
 .scroll-in {
   opacity: 1;
   transform: translate(0, 0);
+}
+
+.lum-lightbox-inner img {
+    width: 60%;
 }
 
 
@@ -408,6 +414,10 @@ a.btn-border-shadow--color:before {
 
     .container {
         width: 100%;
+    }
+    
+    .section_content{
+    
     }
 
     #sec0 video {
