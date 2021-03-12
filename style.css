@@ -56,6 +56,10 @@ p {
     font-family: "筑紫B丸ゴシック";
 }
 
+.nav a:hover{
+    color:hsl(207, 60%, 36%);
+}
+
 .container {
     margin: auto;
     width: 1080px;
