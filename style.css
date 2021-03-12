@@ -8,7 +8,7 @@ body {
     background-image: url(image/nightsky.jpg);
     background-size: contain;
     background-repeat: repeat-y;
-    font-family: "筑紫B丸ゴシック";
+    font-family: "筑紫B丸ゴシック", sans-serif;
     color: white;
     line-height: 1.8;
     font-size: 1em;
@@ -181,7 +181,8 @@ p {
     margin: 20px;
     line-height: 2;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.69)
+    background-color: rgba(255, 255, 255, 0.69);
+    padding: 3em;
 }
 
 .left-box img {
@@ -351,11 +352,6 @@ a.btn-border-shadow--color:before {
 
 @font-face {
     font-family: 'Arvo';
-    src: url(./Arvo-Regular.ttf)
-}
-
-@font-face {
-    font-family: '筑紫B丸ゴシック';
     src: url(./Arvo-Regular.ttf)
 }
 
