@@ -241,15 +241,10 @@ p {
 
 .slidemozi a {
     font-size: 1em;
+    color: #4458f2;
     text-decoration: none;
     z-index: 200;
     text-align: center;
-    background-color:navy;
-    color: #fff;
-}
-
-.shutten a{
-    color: #4458f2;
 }
 
 .bx-wrapper {
