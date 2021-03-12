@@ -236,13 +236,20 @@ p {
 
 .slidemozi p {
     font-size: .7em;
+    margin-bottom: 2em;
 }
 
 .slidemozi a {
     font-size: 1em;
-    color: #4458f2;
     text-decoration: none;
     z-index: 200;
+    text-align: center;
+    background-color:navy;
+    color: #fff;
+}
+
+.shutten a{
+    color: #4458f2;
 }
 
 .bx-wrapper {
